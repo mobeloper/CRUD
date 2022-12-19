@@ -14,6 +14,7 @@ app.use(express.urlencoded({ extended: true }));
 
 const db = require("./app/models");
 
+//Connect to MongoDB database
 db.mongoose
 .connect(db.url, {
  useNewUrlParser: true,
