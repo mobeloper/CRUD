@@ -15,6 +15,9 @@ app.use(express.urlencoded({ extended: true }));
 const db = require("./app/models");
 
 //Connect to MongoDB database
+//TODO:
+// register to mongodb and get user/password to put in .env file
+
 db.mongoose
 .connect(db.url, {
  useNewUrlParser: true,
